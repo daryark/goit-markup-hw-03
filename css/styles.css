@@ -1,0 +1,236 @@
+:root {
+	--main-color: #212121;
+	--second-color: #757575;
+	--accent-color: #2196f3;
+	--button-hover: #188ce8;
+	--white-color-colorbg: #fff;
+	--dark-background: #2f303a;
+	--grey-background: #f5f4fa;
+
+	--letter-spacing: 0.03em;
+	--big-letter-spacing: 0.06em;
+	--line-height-auto: 1.2;
+}
+/*C: Utilities */
+body {
+	font-family: "Roboto", sans-serif;
+	color: var(--main-color);
+	background-color: var(--white-color-colorbg);
+}
+.wrapper {
+	width: 1200px;
+	margin: 0 auto;
+	padding: 0 15px;
+	outline: 2px solid tomato;
+}
+.block-marg {
+	margin-bottom: 94px;
+}
+h1,
+h2,
+h3 {
+	margin-top: 0;
+}
+a {
+	text-decoration: none;
+	color: var(--main-color);
+}
+ul {
+	list-style: none;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-left: 0;
+}
+button {
+	font-family: inherit;
+}
+img {
+	display: block;
+}
+address {
+	font-style: normal;
+}
+.hero,
+.features .title {
+	text-transform: uppercase;
+}
+.sr-only {
+	position: absolute;
+	left: -10000px;
+	top: auto;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+}
+/*C: Header */
+.header,
+.nav {
+	display: flex;
+	align-items: center;
+}
+.nav-list,
+.header .contacts {
+	display: flex;
+	gap: 50px;
+}
+.logo {
+	display: block;
+	margin-right: 93px;
+
+	font-family: "Raleway", sans-serif;
+	font-weight: 700;
+	font-size: 26px;
+	line-height: var(--line-height-auto);
+	color: #000000;
+}
+.nav-list > .item {
+	padding: 32px 0;
+	outline: 1px solid tomato;
+}
+.header .link {
+	font-weight: 500;
+	font-size: 14px;
+	letter-spacing: 0.02em;
+	line-height: var(--line-height-auto);
+}
+.header .contacts {
+	margin-left: auto;
+}
+.contacts .link {
+	color: var(--second-color);
+}
+/*C: Hero section */
+.hero-section > .block-marg {
+	padding: 200px;
+}
+.hero-section,
+.footer {
+	background-color: var(--dark-background);
+}
+.hero,
+.team .text {
+	margin-bottom: 30px;
+	text-align: center;
+
+	font-weight: 900;
+	font-size: 44px;
+	letter-spacing: var(--big-letter-spacing);
+	line-height: 1.36;
+}
+.hero,
+.footer > :first-child,
+.link.real-address {
+	color: var(--white-color-colorbg);
+}
+.action-button {
+	display: block;
+	margin: 0 auto;
+	padding: 10px 32px;
+	border: 1px solid transparent;
+
+	font-weight: 700;
+	font-size: 16px;
+	letter-spacing: var(--big-letter-spacing);
+	line-height: 1.88;
+}
+.action-button,
+.filter {
+	border-radius: 4px;
+
+	cursor: pointer;
+}
+/*C: Features section */
+.features,
+.services,
+.team {
+	display: flex;
+	gap: 30px;
+}
+.features .title {
+	margin-bottom: 10px;
+
+	font-weight: 700;
+	font-size: 14px;
+	line-height: var(--line-height-auto);
+	letter-spacing: var(--letter-spacing);
+}
+.text {
+	margin-bottom: 0;
+	margin-top: 0;
+	letter-spacing: var(--letter-spacing);
+	color: var(--second-color);
+}
+.features .text,
+.footer .link {
+	font-size: 14px;
+	line-height: 1.72;
+}
+/* C: Services and team sections, footer*/
+.block-title {
+	margin-bottom: 50px;
+	text-align: center;
+
+	font-weight: 700;
+	font-size: 36px;
+	line-height: var(--line-height-auto);
+	letter-spacing: var(--letter-spacing);
+}
+.team-section {
+	background-color: var(--grey-background);
+	padding-top: 94px;
+}
+.team img,
+.team .text {
+	margin-bottom: 30px;
+}
+.team .title {
+	margin-bottom: 10px;
+	text-align: center;
+}
+.team .title,
+.filter {
+	display: block;
+	font-weight: 500;
+}
+.team .title,
+.team .text,
+.portfolio .text,
+.filter {
+	font-size: 16px;
+	line-height: var(--line-height-auto);
+	letter-spacing: var(--letter-spacing);
+}
+.footer .link + .link {
+	color: rgba(255, 255, 255, 0.6);
+}
+/*C: Portfolio page */
+.portfolio .title {
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 2;
+	letter-spacing: var(--big-letter-spacing);
+}
+.filter {
+	background-color: var(--grey-background);
+	letter-spacing: var(--letter-spacing);
+	line-height: 1.63;
+}
+
+/*C: Hovers */
+.action-button:hover,
+.action-button:focus {
+	background-color: var(--button-hover);
+}
+.logo-accent,
+.link.active,
+.link:hover,
+.link:focus {
+	color: var(--accent-color);
+}
+.action-button,
+.filter.active,
+.filter:hover,
+.filter:focus {
+	color: var(--white-color-colorbg);
+	background-color: var(--accent-color);
+}
