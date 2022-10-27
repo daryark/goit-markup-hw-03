@@ -154,7 +154,7 @@ address {
 	width: calc((100% - 90px) / 4);
 }
 .services > .card,
-.portfolio .card {
+.portfolio > .card {
 	width: calc((100% - 60px) / 3);
 }
 .features .title {
