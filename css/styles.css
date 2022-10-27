@@ -17,12 +17,12 @@ body {
 	color: var(--main-color);
 	background-color: var(--white-color-colorbg);
 }
-.wrapper {
+.container {
 	width: 1200px;
 	margin: 0 auto;
 	padding: 0 15px;
 }
-.block-marg {
+.section {
 	margin-bottom: 94px;
 }
 h1,
@@ -62,7 +62,10 @@ address {
 	overflow: hidden;
 }
 /*C: Header */
-.header,
+.header {
+	border-bottom: 1px solid #ececec;
+}
+.header .container,
 .nav {
 	display: flex;
 	align-items: center;
@@ -99,7 +102,7 @@ address {
 	color: var(--second-color);
 }
 /*C: Hero section */
-.hero-section > .block-marg {
+.hero-section > .section {
 	padding: 200px;
 }
 .hero-section,
@@ -117,7 +120,7 @@ address {
 	line-height: 1.36;
 }
 .hero,
-.footer .wrapper > :first-child,
+.footer .container > :first-child,
 .link.real-address {
 	color: var(--white-color-colorbg);
 }
@@ -217,7 +220,7 @@ address {
 	line-height: var(--line-height-auto);
 	letter-spacing: var(--letter-spacing);
 }
-.footer .wrapper {
+.footer .container {
 	padding-top: 60px;
 	padding-bottom: 60px;
 }
