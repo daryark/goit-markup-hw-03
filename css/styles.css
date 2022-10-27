@@ -229,7 +229,7 @@ address {
 .footer .logo {
 	margin-bottom: 20px;
 }
-.footer .item:not(:nth-last-child(1)) {
+.footer .item:not(:last-child) {
 	margin-bottom: 9px;
 }
 .footer .link + .link {
