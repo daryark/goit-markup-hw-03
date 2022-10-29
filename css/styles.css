@@ -23,7 +23,15 @@ body {
 	padding: 0 15px;
 }
 .section {
-	margin-bottom: 94px;
+	padding-top: 94px;
+	padding-bottom: 94px;
+}
+.services-section {
+	padding-top: 0;
+}
+.footer {
+	padding-top: 60px;
+	padding-bottom: 60px;
 }
 h1,
 h2,
@@ -129,14 +137,15 @@ address {
 	display: block;
 	margin: 0 auto;
 	padding: 10px 32px;
-
-	border-style: none;
-	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	text-align: center;
 
 	font-weight: 700;
 	font-size: 16px;
 	letter-spacing: var(--big-letter-spacing);
 	line-height: 1.88;
+
+	border-style: none;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .action-button,
 .filter {
@@ -155,10 +164,6 @@ address {
 .team > .card {
 	width: calc((100% - 90px) / 4);
 }
-.services > .card,
-.portfolio > .card {
-	width: calc((100% - 60px) / 3);
-}
 .features .title {
 	margin-bottom: 10px;
 
@@ -176,9 +181,13 @@ address {
 .features .text,
 .footer .link {
 	font-size: 14px;
-	line-height: 1.72;
+	line-height: 1.5;
 }
 /* C: Services and team sections, footer*/
+.services > .card,
+.portfolio > .card {
+	width: calc((100% - 60px) / 3);
+}
 .block-title {
 	margin-bottom: 50px;
 	text-align: center;
@@ -189,21 +198,15 @@ address {
 	letter-spacing: var(--letter-spacing);
 }
 .team-section {
-	padding-top: 94px;
-	padding-bottom: 94px;
-
 	background-color: var(--grey-background);
 }
 .team .card {
 	background-color: var(--white-color-colorbg);
 	border-radius: 0 0 4px 4px;
-	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
-		0px 1px 1px rgba(0, 0, 0, 0.14),
-		0px 2px 1px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
-.team img,
-.team .text {
-	margin-bottom: 30px;
+.team .content {
+	padding: 30px 0;
 }
 .team .title {
 	margin-bottom: 10px;
@@ -221,10 +224,6 @@ address {
 	font-size: 16px;
 	line-height: var(--line-height-auto);
 	letter-spacing: var(--letter-spacing);
-}
-.footer .container {
-	padding-top: 60px;
-	padding-bottom: 60px;
 }
 .footer .logo {
 	margin-bottom: 20px;
@@ -244,6 +243,7 @@ address {
 }
 .filter {
 	padding: 6px 22px;
+	text-align: center;
 
 	letter-spacing: var(--letter-spacing);
 	line-height: 1.63;
